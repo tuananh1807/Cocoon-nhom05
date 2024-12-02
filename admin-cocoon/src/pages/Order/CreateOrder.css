@@ -1,0 +1,93 @@
+
+.CreateOrder {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .checkout-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .checkout-form, .order-summary {
+    width: 48%;
+  }
+  
+  .billing-info, .order-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .billing-info h2, .order-summary h2 {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input[type="text"], input[type="email"], .ant-input, .ant-select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .ant-input-textarea {
+    resize: none;
+  }
+  
+  .order-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .order-summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .order-summary .price-summary p {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-summary .note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .checkout-btn {
+    background-color: #040405;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #081a29;
+  }
+  
+  
+  

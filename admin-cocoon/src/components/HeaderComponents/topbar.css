@@ -1,0 +1,125 @@
+
+.Topbar {
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 15%;
+    border-radius: 15px;
+    gap: 20px;
+  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .Topbar {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0px;
+    }
+  }
+  
+  .topbarleft {
+    width: 35%;
+    height: 95%;
+    /* border: 1px solid black; */
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .topbarleft {
+      height: 100%;
+    }
+  
+    .topbarleft h1 {
+      font-size: 15px;
+    }
+  
+    .topbarleft small {
+      font-size: 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .topbarleft {
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /* --mid */
+  
+  .topbarmid {
+    width: 35%;
+    height: 95%;
+    /* border: 1px solid black; */
+  
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .topbarmid {
+      width: 90%;
+    }
+  }
+  
+  .topbarmid input {
+    width: 70%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* --right */
+  
+  .topbarright {
+    width: 35%;
+    height: 95%;
+    /* border: 1px solid black; */
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .topbarright {
+      width: 90%;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+  
+  .topbarright span {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topbarright span:hover {
+    scale: 1.1;
+  }
+  
+  .topbarright img:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }

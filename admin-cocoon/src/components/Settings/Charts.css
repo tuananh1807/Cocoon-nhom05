@@ -1,0 +1,55 @@
+.charts {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các biểu đồ theo hàng */
+    justify-content: space-around; /* Đặt khoảng cách giữa các biểu đồ */
+    gap: 20px; /* Khoảng cách giữa các chart */
+    margin-bottom: 30px; /* Khoảng cách dưới các biểu đồ */
+  }
+  
+  .chart-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Đảm bảo cả hai biểu đồ chiếm cùng một không gian */
+    width: 100%; /* Đặt chiều rộng 100% để linh hoạt hơn */
+    height: 300px; /* Đặt chiều cao cố định cho các biểu đồ */
+    display: flex; /* Canh giữa nội dung bên trong */
+    flex-direction: column; /* Sắp xếp tiêu đề và biểu đồ theo chiều dọc */
+    align-items: center; /* Canh giữa nội dung */
+  }
+  
+  .chart-container h4 {
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề và biểu đồ */
+    color: #4e73df; /* Màu tiêu đề phù hợp với thương hiệu */
+  }
+  
+  .chart-container canvas {
+    max-width: 100%; /* Đảm bảo canvas không vượt quá chiều rộng của container */
+    height: auto; /* Đảm bảo chiều cao tự động dựa trên chiều rộng */
+  }
+  
+  .bar-chart-container {
+    margin-top: 30px; /* Thêm khoảng cách giữa Bar Chart và các biểu đồ trên */
+    display: flex; /* Sử dụng Flexbox cho Bar Chart */
+    justify-content: center; /* Canh giữa Bar Chart */
+    max-width: 100%; /* Đảm bảo chart không vượt quá chiều rộng của bố cục */
+    height: 400px; /* Đặt chiều cao cố định cho Bar Chart */
+  }
+  
+  .bar-chart-container h4 {
+    margin-bottom: 10px; /* Khoảng cách giữa tiêu đề Bar Chart và biểu đồ */
+    color: #4e73df; /* Màu tiêu đề phù hợp với thương hiệu */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .charts {
+      flex-direction: column; /* Xếp chồng các chart trên màn hình nhỏ */
+      align-items: center; /* Canh giữa các biểu đồ khi xếp chồng */
+    }
+  
+    .chart-container {
+      width: 100%; /* Đảm bảo biểu đồ chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    }
+  }
+  
